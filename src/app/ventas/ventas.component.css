@@ -1,0 +1,19 @@
+.items:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(151, 151, 151, 0.35);
+    fill: rgb(105, 103, 103);
+    border-color: aqua;
+    cursor: pointer;
+}
+
+img{
+    height: 160px;
+}
+
+.description-container {
+    height: 80px; /* Ajusta la altura según lo necesario */
+    overflow: hidden; /* Oculta cualquier contenido que exceda la altura */
+    display: flex;
+    align-items: center; /* Centra verticalmente el texto */
+    text-align: center; /* Centra el texto horizontalmente */
+  }

@@ -1,0 +1,13 @@
+<div *ngIf="variable=='desactivo'" class="container-fluid">
+    <app-barramenu></app-barramenu>
+    <app-video ></app-video>
+    <router-outlet ></router-outlet>
+    <app-pies></app-pies>
+</div>
+<div *ngIf="variable=='activo'" class="container-fluid">
+    <app-dashboard></app-dashboard>
+</div>
+
+
+
+

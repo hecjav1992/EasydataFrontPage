@@ -1,0 +1,63 @@
+<div class="row">
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <!-- icono o nombre -->
+
+      <a class="navbar-brand col-1" href="/">
+        <link rel="icon" type="assets/logo2.JPG"  href="/favicon.jpg"/>
+        <img src="assets/logo2.JPG" alt="Logo" width="100" height="24" class="d-inline-block align-text-top">
+      </a>
+
+      <!-- boton del menu -->
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- elementos del menu colapsable -->
+
+      <div class="collapse navbar-collapse col-9 justify-content-center" id="menu">
+        <ul class="navbar-nav me-auto dropdown">
+          <li class="nav-item">
+            a
+            <a class="text-decoration-none mx-5" routerLink="Inicio">{{snicio}}</a>
+          </li>
+          <li class="nav-item m-0">
+            <a class="text-decoration-none">{{servicios}}</a>
+              <ul>
+              <li class="dropdown-item mx-2"><i class="bi bi-tools m-0"></i><a class="text-decoration-none m-2" routerLink="Servicios">{{soporte}}</a></li>
+              <li class="dropdown-item mx-2"><i class="bi bi-bag-fill m-0"></i><a class="text-decoration-none m-2" routerLink="TecnologiaArticulos">{{ventas}}</a></li>
+             </ul>
+          </li>
+          <li class="nav-item dropdown mx-5">
+            <a class="text-decoration-none " routerLink="escolar">{{escolar}}</a>
+          </li>
+          <li>
+            <a class="text-decoration-none" routerLink="capacitacion">{{capacitaciones}}</a>
+          </li>
+          <li>
+            <a class="text-decoration-none mx-5" routerLink="Login">{{equipo}}</a>
+          </li>
+        </ul>
+
+        <hr class="d-md-none text-white-50">
+
+        <!-- enlaces redes sociales -->
+
+        <ul class="navbar-nav  flex-row flex-wrap text-dark">
+
+          <li class="nav-item col-2 col-md-auto p-3">
+            <div class="bg-success d-flex justify-content-center align-items-center"
+            style="border-radius:200px;width:45px;height:45px;">
+            <a class="bi bi-whatsapp  text-decoration-none text-white" href="https://wa.me/50768844342/"
+             target="_blank"></a>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</div>

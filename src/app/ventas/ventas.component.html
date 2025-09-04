@@ -1,0 +1,68 @@
+<div class="container mb-5">
+  <div class="product-item col-12">
+    <div class="row">
+      <div class="col-3 product-item-title flex-column d-flex justify-content-md-center align-items-center">
+        <img id="btnaudifono" src="assets/modeloAudifono.jpg" class="rounded-circle m-2" width="170" height="170" />
+        <p class="text-center mt-2">Audifonos</p>
+      </div>
+      <div class="col-3 product-item-title flex-column d-flex justify-content-md-center align-items-center">
+        <img id="btncargadores" src="assets/modeloCargadores.jpeg" class="rounded-circle m-2" width="170"
+          height="170" />
+        <p class="text-center mt-2">Cargadores</p>
+      </div>
+      <div class="col-3 product-item-title flex-column d-flex justify-content-md-center align-items-center">
+        <img id="btnPowerBank" src="assets/modeloBaterias.PNG" class="rounded-circle m-2" width="170" height="170" />
+        <p class="text-center mt-2">Power Bank</p>
+      </div>
+      <div class="col-3 product-item-title flex-column d-flex justify-content-md-center align-items-center">
+        <img id="btnAdaptador" src="assets/modeloAdaptadores.PNG" class="rounded-circle m-2" width="170" height="170" />
+        <p class="text-center mt-2">Adaptadores</p>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="card shadow">
+    <div class="col-12 col-md-12 card-header audifono">
+      <h1><i class="bi bi-headset"></i><strong> Audifonos</strong></h1>
+    </div>
+    <div class="row d-flex flex-row justify-content-center align-content-center">
+      <div *ngFor="let item of items" class="row audifono card shadow  col-md-3 m-3 col-9 items">
+        <div class="card-header cardHeaderaudifono">
+          <p class=" text-primary text-center m-0"><b>{{item.Nombre_Producto}}</b></p>
+        </div>
+        <img class="img-fluid mb-2 mt-2" src="{{item.Imagen_URL}}" />
+        <hr>
+        <h6 class="text-primary">Precio: ${{item.Precio}}</h6>
+        <p *ngIf="item.Stock>=1;else negative" class="text-success">Disponible</p>
+        <ng-template #negative>
+        <p *ngIf="item.Stock<1" class="text-danger">Agotado</p>
+        </ng-template>
+        <div style="height:150px;">
+          <p>{{item.Descripcion}}</p>
+        </div>
+        <a class="btn btn-success mb-3" href="https://wa.me/50768844342?text=Estoy%20interesado%20en {{item.Titulo}}"
+          target="_blank"> Cotizar </a>
+      </div>
+    </div>
+    <div class="col-12 col-md-12 card-header cargadores">
+      <h1><i class="bi bi-headset"></i><strong> Cargadores</strong></h1>
+    </div>
+    <div class="row d-flex flex-row justify-content-center align-content-center">
+      <div *ngFor="let item of items" class="row card shadow cargadores col-md-3 m-3 col-9 items">
+        <div class="card-header">
+          <p class="text-primary text-center m-0"><b>{{item.Titulo}}</b></p>
+        </div>
+        <img class="img-fluid mb-2 mt-2" src="{{item.nombre}}" />
+        <hr />
+        <h6 class="description-container">
+          <p>{{item.Descripcion}}</p>
+        </h6>
+        <a
+          class="btn btn-success mb-3"
+          href="https://wa.me/50768844342?text=Estoy%20interesado%20en {{item.Titulo}}"
+          target="_blank"
+          >Cotizar</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<div class="row  mt-5 justify-content-center">
+    <div *ngIf="variable==' '" id="fondo3" class="col-md-12 col-sm-12">
+        <div class="col-3" id="texto"> </div>  
+    </div>
+    <div *ngIf="variable=='inicio'" id="fondo3" class="col-md-12 col-sm-12">
+        <div class="col-3" id="texto"> </div>  
+    </div>
+    <div *ngIf="variable=='tecnologia'" id="fondo" class="col-md-12 col-sm-12">
+        <div class="col-3" id="texto">
+            <i>
+            <h3 >{{titulo}}</h3>
+            </i>
+        </div> 
+    </div>
+    <div *ngIf="variable=='Ventastecnologia2'" id="fondotec" class="col-md-12 col-sm-12">
+        <div class="col-3" id="texto">
+            <i>
+            <h3 >{{titulo4}}</h3>
+            </i>
+        </div> 
+    </div>
+    <div *ngIf="variable=='escolar'" id="fondo2" class="col-md-12 col-sm-12">
+        <div class="col-3" id="texto">
+            <i>
+            <h3 >{{titulo2}}</h3>
+            </i>
+        </div>  
+    </div>
+    <div *ngIf="variable=='capacitacion'" id="fondo4" class="col-md-12 col-sm-12">
+        <div class="col-3" id="texto">
+            <i>
+            <h3 >{{titulo3}}</h3>
+            </i>
+        </div>  
+    </div>
+    <div *ngIf="variable=='inicio'" class="col-12 bg-primary" style="height:20px;"></div> 
+    <div *ngIf="variable=='tecnologia'" class="col-12 bg-primary" style="height:20px;"></div> 
+    <div *ngIf="variable=='Ventastecnologia2'" class="col-12 bg-primary" style="height:20px;"></div> 
+    <div *ngIf="variable=='escolar'" class="col-12 bg-warning" style="height:20px;"></div> 
+    <div *ngIf="variable=='capacitacion'" class="col-12" style="height:20px;background-color:#f0ad4e;"></div> 
+</div>
